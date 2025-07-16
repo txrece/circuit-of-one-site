@@ -6,9 +6,9 @@
   <title>CIRCUIT OF ONE</title>
   <style>
     body {
-      background-color: #0a0a0a;
-      color: #e0e0e0;
-      font-family: 'Helvetica Neue', sans-serif;
+      background-color: #000;
+      color: #00ffcc;
+      font-family: 'Courier New', monospace;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -16,53 +16,65 @@
       height: 100vh;
       margin: 0;
       text-align: center;
+      overflow: hidden;
     }
+
     img {
       width: 200px;
-      opacity: 0.7;
-      margin-bottom: 20px;
+      opacity: 0.9;
+      margin-bottom: 30px;
+      filter: grayscale(100%) contrast(140%);
     }
+
     h1 {
-      font-size: 2em;
+      font-size: 3em;
+      color: #ff0033;
       margin: 0;
-      color: #ff0033;
-      letter-spacing: 1px;
+      font-weight: 900;
+      letter-spacing: 3px;
+      animation: pulse 1.5s infinite;
+      text-shadow: 0 0 6px #ff0033, 0 0 20px #ff0033;
     }
-    p.sub {
-      font-size: 1em;
-      color: #bbbbbb;
-      margin: 10px 0 30px 0;
-      max-width: 400px;
+
+    @keyframes pulse {
+      0% { text-shadow: 0 0 5px #ff0033; }
+      50% { text-shadow: 0 0 20px #ff0033; }
+      100% { text-shadow: 0 0 5px #ff0033; }
     }
+
+    p {
+      font-size: 1.1em;
+      font-style: italic;
+      max-width: 80%;
+      margin: 20px auto;
+      color: #00ffcc;
+      text-shadow: 0 0 4px #00ffcc;
+    }
+
     a.button {
-      padding: 12px 24px;
       background-color: transparent;
-      color: #ff0033;
-      border: 2px solid #ff0033;
-      border-radius: 6px;
+      color: #00ffcc;
+      padding: 14px 34px;
+      font-size: 1.2em;
+      border: 2px solid #00ffcc;
+      border-radius: 8px;
+      font-weight: 700;
       text-decoration: none;
-      font-weight: bold;
+      box-shadow: 0 0 10px #00ffcc;
       transition: all 0.3s ease;
     }
+
     a.button:hover {
-      background-color: #ff0033;
-      color: #000000;
-    }
-    footer {
-      position: absolute;
-      bottom: 20px;
-      font-size: 0.8em;
-      color: #444;
+      background-color: #00ffcc;
+      color: #000;
+      box-shadow: 0 0 25px #00ffcc;
     }
   </style>
 </head>
 <body>
-  <img src="hooded-avatar.png" alt="Encrypted Operator" />
-  <h1>Transmission Recovered</h1>
-  <p class="sub">Vault I is now open. This isn’t a product. It’s a ritual. If you're reading this, your loop already started.</p>
-  <a class="button" href="https://your-stripe-or-ko-fi-link.com">UNLOCK VAULT I</a>
-  <footer>
-    &copy; CIRCUIT OF ONE &mdash; All transmissions encrypted
-  </footer>
+  <img src="hooded-avatar.png" alt="Hooded Figure" />
+  <h1>⛧ CIRCUIT OF ONE ⛧</h1>
+  <p>[ ENCRYPTED SIGNAL LOCKED ] You were never meant to be average. Access is no longer a choice — it’s an initiation.</p>
+  <a class="button" href="#">ENTER VAULT I</a>
 </body>
 </html>
