@@ -5,86 +5,79 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>CIRCUIT OF ONE</title>
   <style>
-    @keyframes glitch {
-      0% { transform: none; opacity: 1; }
-      20% { transform: translate(-2px, 2px); opacity: 0.8; }
-      40% { transform: translate(2px, -1px); opacity: 1; }
-      60% { transform: translate(-1px, 1px); opacity: 0.9; }
-      80% { transform: translate(1px, -2px); opacity: 1; }
-      100% { transform: none; opacity: 1; }
-    }
-
     body {
-      background-color: #0d0d0d;
-      color: #e0f7f1;
-      font-family: 'Inter', 'Courier New', monospace;
+      margin: 0;
+      height: 100vh;
+      background-color: #000;
+      background-image: url('c8aaf95a-0347-43c7-bac2-55ab2fc9d64c.png');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      height: 100vh;
-      margin: 0;
+      font-family: 'Courier New', monospace;
+      color: #fff;
       text-align: center;
       padding: 20px;
     }
 
-    img {
-      width: 220px;
-      opacity: 0.95;
-      margin-bottom: 28px;
-      border-radius: 10px;
-      animation: glitch 1.8s infinite;
-    }
-
     h1 {
-      font-size: 2.8em;
-      color: #ff2e63;
-      font-weight: 800;
-      margin: 0;
+      font-size: 2.5em;
       letter-spacing: 2px;
-      text-shadow: 0 0 6px rgba(255, 46, 99, 0.6);
-      animation: glitch 2.5s infinite;
+      margin-bottom: 30px;
+      color: #fff;
     }
 
     p {
-      font-size: 1.15em;
-      font-weight: 500;
-      max-width: 700px;
-      margin: 24px auto;
-      color: #e0f7f1;
-      text-shadow: 0 0 2px #00ffc3;
-      line-height: 1.6;
+      max-width: 600px;
+      font-size: 1em;
+      color: #ccc;
+      font-weight: 400;
+      line-height: 1.7;
+    }
+
+    p strong {
+      color: #fff;
     }
 
     a.button {
-      background: linear-gradient(135deg, #ff2e63, #08ffc8);
-      color: #000;
-      padding: 14px 36px;
-      font-size: 1.15em;
-      border: none;
-      border-radius: 12px;
+      display: inline-block;
+      margin-top: 40px;
+      padding: 12px 32px;
+      color: #fff;
+      border: 1px solid #fff;
       text-decoration: none;
-      font-weight: 700;
-      box-shadow: 0 0 18px rgba(8, 255, 200, 0.5);
-      transition: all 0.35s ease;
+      font-weight: bold;
+      font-size: 1em;
+      transition: all 0.3s ease;
     }
 
     a.button:hover {
       background-color: #fff;
       color: #000;
-      box-shadow: 0 0 28px rgba(255, 255, 255, 0.9);
+    }
+
+    .glitch {
+      color: white;
+      font-weight: bold;
+      animation: glitch 1s infinite;
+    }
+
+    @keyframes glitch {
+      0% { text-shadow: 2px 0 red, -2px 0 blue; }
+      25% { text-shadow: -2px 0 lime, 2px 0 magenta; }
+      50% { text-shadow: 2px 0 cyan, -2px 0 yellow; }
+      75% { text-shadow: -2px 0 red, 2px 0 blue; }
+      100% { text-shadow: 2px 0 lime, -2px 0 magenta; }
     }
   </style>
 </head>
 <body>
-  <img src="https://raw.githubusercontent.com/OpenAI-generated-assets/chatgpt-images/main/hooded-blur-masked.png" alt="Hooded Figure" />
-  <h1>⛧ CIRCUIT OF ONE ⛧</h1>
-  <p>
-    Welcome to the system.<br />
-    This isn’t a funnel — it’s a frequency.<br />
-    Everything here is built to shift your path permanently.<br />
-    Proven value, no fluff. Disappear from the noise and become your own circuit.
-  </p>
-  <a class="button" href="#">ACCESS VAULT I</a>
+  <h1>☆ CIRCUIT OF ONE ☆</h1>
+  <p class="glitch">[ ENCRYPTED STGNAL LOCKED ]</p>
+  <p><em>You were <strong>never</strong> meant to be average.</em> Access is no longer a choice — it’s an initiation.</p>
+  <a class="button" href="#">ENTER VAULT</a>
 </body>
 </html>
